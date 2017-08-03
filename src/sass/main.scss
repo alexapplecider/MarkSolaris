@@ -1,0 +1,90 @@
+@import "global/normalize";
+@import "global/scaffolding";
+@import "global/fonts";
+@import "global/variables";
+@import "global/general";
+// HEADER
+header {
+    position: relative;
+    background: url(../img/header-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 725px;
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
+        border-top: transparent;
+        border-right: transparent;
+        bottom: 2%;
+        left: 50%;
+        transform: rotate(-45deg);
+    }
+}
+
+.header__top-line {
+    display: flex;
+    justify-content: space-between;
+    color: $c-secondary;
+}
+
+.logo {
+    margin-right: 80px;
+}
+
+.nav-list {
+    font-size: 0;
+    margin-top: 50px;
+    font-family: $f-primary;
+    &__item {
+        font-size: 14px;
+        display: inline-block;
+        margin-right: 80px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    &__item:hover {
+        text-decoration: underline;
+    }
+}
+
+.language {
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    &__primary {
+        margin-right: 40px;
+        text-decoration: underline;
+    }
+}
+
+.header-slogan {
+    &__text {
+        margin-top: 85px;
+        font-family: $f-secondary;
+        font-size: 100px;
+        color: $c-secondary;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+}
+
+.hire-me {
+    display: block;
+    width: 165px;
+    height: 45px;
+    border: 2px solid white;
+    margin: 0 auto;
+    margin-top: 135px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+// HEADER
+// MAIN
