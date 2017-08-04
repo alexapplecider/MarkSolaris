@@ -1,4 +1,4 @@
-.body-page {
+body {
   font-family: $f-primary;
   font-size: $f-text-size;
   line-height: $f-base-lh;
@@ -6,15 +6,23 @@
 }
 
 // Центровщик
-.container-inner {
+.container {
+  max-width: 1140px;
+  padding: 0 7%;
   margin: 0 auto;
-  @media (min-width: 1000px) {
-    width: 980px;
+  @media (max-width: 768px) {
+    padding: 0 1%;
   }
-  @media (min-width: 600px) {
-    width: 640px;
-  }
-  @media (min-width: 320px) {
-    width: 233px;
-  }
+}
+
+// FLEXBOX
+.flex-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-block-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

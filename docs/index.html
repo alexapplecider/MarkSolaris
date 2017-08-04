@@ -6,52 +6,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
   <link rel="stylesheet" href="css/main.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
 </head>
 
 <body>
 
-
   <header>
-    <div class="container-full">
-      <div class="container-inner">
-        <div class="header__top-line">
-          <div class="logo">
-            <a class="logo__link" href="#">
+    <div class="container flex-block-column">
+      <div class="header__top-line">
+        <div class="logo">
+          <a class="logo__link" href="#">
             <img class="logo__img" src="img/logo.jpg" alt="logo MS photography">
           </a>
-          </div>
-          <nav class="top-nav">
-            <ul class="nav-list">
-              <li class="nav-list__item"><a href="#" class="nav-list__item-link">HOME</a></li>
-              <li class="nav-list__item"><a href="#" class="nav-list__item-link">ABOUT</a></li>
-              <li class="nav-list__item"><a href="#" class="nav-list__item-link">PORTFOLIO</a></li>
-              <li class="nav-list__item"><a href="#" class="nav-list__item-link">CONTACT</a></li>
-            </ul>
-          </nav>
-          <div class="language">
-            <span class="language__primary">EN</span>
-            <span class="language__secondary">RU</span>
-          </div>
         </div>
-        <div class="header-slogan">
-          <p class="header-slogan__text">Your photographer Mark Solaris</p>
+        <nav class="top-nav">
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#" class="nav-list__item-link">HOME</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__item-link">ABOUT</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__item-link">PORTFOLIO</a></li>
+            <li class="nav-list__item"><a href="#" class="nav-list__item-link">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="language">
+          <span class="language__primary">EN</span>
+          <span class="language__secondary">RU</span>
         </div>
-        <a href="#" class="hire-me"> Hire me</a>
       </div>
+      <div class="header-slogan">
+        <p class="header-slogan__text">Your photographer Mark Solaris</p>
+      </div>
+      <a href="#" class="hire-me hire-me--header"> Hire me</a>
     </div>
   </header>
 
-
   <main>
-
+    <div class="container">
+      <section class="about">
+        <article class="about__info">
+          <h1 class="about__info-header">Mark Solaris, <br> professional photographer</h1>
+          <p class="about__info-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+            quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+            sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Nemo enim
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione voluptatem sequi nesciunt.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua, enim ad minim veniam, quis nostrud.</p>
+        </article>
+        <div class="about__img">
+          <img src="img/author-photo.jpg" alt="author photo">
+        </div>
+      </section>
+    </div>
+    <div class="container">
+      <section class="quote">
+        <span class="quote__one-half">„Photography is a reality so subtle that</span>
+        <span class="quote__two-half">it becomes more real than reality itself“</span>
+        <span class="quote__author">Alfred Stiglitz</span>
+      </section>
+    </div>
+    <div class="container">
+      <section class="portfolio">
+        <h2 class="portfolio__header">Portfolio</h2>
+        <div class="portfolio-images">
+          <div class="portfolio-images__column-left">
+            <a href="img/gallery/1.png"><img src="img/gallery/1.png" alt=""></a>
+            <a href="img/gallery/2.png"><img src="img/gallery/2.png" alt=""></a>
+          </div>
+          <div class="portfolio-images__column-center">
+            <a href="img/author-photo.jpg"><img src="img/author-photo.jpg" alt=""></a>
+          </div>
+          <div class="portfolio-images__column-right">
+            <a href="img/gallery/1.png"><img src="img/gallery/1.png" alt=""></a>
+            <a href="img/gallery/2.png"><img src="img/gallery/2.png" alt=""></a>
+          </div>
+        </div>
+        <a href="#" class="hire-me hire-me--portfolio"> Hire me</a>
+      </section>
+    </div <div class="container">
+    <section class="feedback">
+      <h1 class="feedback__header">STILL HAVE QUESTION?</h1>
+      <form class="feedback__form" action="">
+        <input class="feedback__form-name" type="text" name="name" placeholder="name">
+        <input class="feedback__form-email" type="text" name="email" placeholder="email">
+        <textarea class="feedback__form-textarea" name="message" placeholder="your message" cols="30" rows="10"></textarea>
+        <button class="feedback__form-button">send</button>
+      </form>
+    </section>
+    </div>
   </main>
 
-
   <footer>
-
+    <div class="container">
+      <section class="contact">
+        <h2 class="contact__heading">CONTACT INFO</h2>
+        <span class="contact__geo">
+          <img src="img/icons/geo.png" alt="">All Canada
+        </span>
+        <a class="contact__phone" href="tel:11555544477">
+          <img src="img/icons/phone.png" alt="">+11555544477
+        </a>
+        <a class="contact__mail" href="mailto:mark_solaris@gmail.com">
+          <img src="img/icons/mail.png" alt="">mark_solaris@gmail.com
+        </a>
+        <div class="contact__social">
+          <a href="#"><img src="img/icons/instagram.png" alt="instagram"></a>
+          <a href="#"><img src="img/icons/facebook.png" alt="facebook"></a>
+          <a href="#"><img src="img/icons/twitter.png" alt="twitter"></a>
+        </div>
+      </section>
+    </div>
   </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.portfolio-images').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function (item) {
+            return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+          }
+        }
+      });
+    });
+  </script>
 
 
 </body>

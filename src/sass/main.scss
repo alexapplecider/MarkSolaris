@@ -8,7 +8,6 @@ header {
     position: relative;
     background: url(../img/header-bg.jpg) no-repeat;
     background-size: cover;
-    height: 725px;
     &::after {
         position: absolute;
         content: "";
@@ -21,6 +20,9 @@ header {
         bottom: 2%;
         left: 50%;
         transform: rotate(-45deg);
+    }
+    & .container {
+        height: 100vh;
     }
 }
 
@@ -58,11 +60,14 @@ header {
         margin-right: 40px;
         text-decoration: underline;
     }
+    &__primary,
+    &__secondary {
+        cursor: pointer;
+    }
 }
 
 .header-slogan {
     &__text {
-        margin-top: 85px;
         font-family: $f-secondary;
         font-size: 100px;
         color: $c-secondary;
@@ -77,14 +82,219 @@ header {
     height: 45px;
     border: 2px solid white;
     margin: 0 auto;
-    margin-top: 135px;
     font-size: 14px;
     font-weight: 700;
     color: white;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase;
+    &--header {
+        margin-bottom: 12%;
+        @media (max-height: 700px) {
+            margin-bottom: 5%;
+        }
+    }
+    &--portfolio {
+        margin-top: 50px;
+        border: 2px solid #000000;
+        color: #000000;
+    }
 }
 
 // HEADER
 // MAIN
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__info,
+    &__img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 425px;
+        @media (max-width: 768px) {
+            max-width: 250px;
+        }
+    }
+    &__info-header {
+        font-family: $f-secondary;
+        font-size: 30px;
+        font-weight: 200;
+        margin: 0;
+        margin-bottom: 17px;
+    }
+    &__info-text {
+        font-family: $f-primary;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+}
+
+.quote {
+    position: relative;
+    height: 465px;
+    background: url(../img/quote-bg.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 185px;
+    padding-bottom: 135px;
+    color: #ffffff;
+    font-family: $f-secondary;
+    font-size: 30px;
+    font-weight: 700;
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
+        border-top: transparent;
+        border-right: transparent;
+        bottom: 4%;
+        left: 50%;
+        transform: rotate(-45deg);
+    }
+    &__one-half {
+        position: absolute;
+        top: 43%;
+        left: 8.5%;
+    }
+    &__two-half {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+    }
+    &__author {
+        position: absolute;
+        top: 60%;
+        right: 9%;
+        font-size: 30px;
+        font-weight: 300;
+    }
+}
+
+.portfolio {
+    position: relative;
+    padding-top: 50px;
+    height: 895px;
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid black;
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        bottom: 4%;
+        left: 50%;
+        transform: rotate(-45deg);
+    }
+    &__header {
+        text-align: center;
+        font-family: $f-secondary;
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
+
+.portfolio-images {
+    display: flex;
+    justify-content: space-between;
+    &__column-left,
+    &__column-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__column-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    background: url(../img/feedback-bg.jpg) no-repeat center center;
+    background-size: cover;
+    &__header {
+        margin-top: 45px;
+        color: #ffffff;
+        text-align: center;
+        font-family: $f-secondary;
+        font-size: 30px;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+    }
+    &__form-name,
+    &__form-email,
+    &__form-textarea,
+    &__form-button {
+        padding-left: 10px;
+        font-family: $f-primary;
+        color: #ffffff;
+        font-size: 12px;
+        width: 245px;
+        height: 45px;
+        background: transparent;
+        border: 2px solid white;
+        margin-bottom: 20px;
+    }
+    &__form-textarea {
+        height: 150px;
+        padding-top: 15px;
+    }
+    &__form-button {
+        width: 145px;
+        cursor: pointer;
+    }
+}
+
+// MAIN
+// FOOTER 
+footer {
+    background-color: #000;
+    height: 330px;
+}
+
+.contact {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    align-items: center;
+    font-family: $f-primary;
+    font-size: 12px;
+    font-weight: 700;
+    &__heading {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-family: $f-secondary;
+        font-weight: 200;
+    }
+    &__geo img,
+    &__phone img,
+    &__mail img {
+        margin-right: 10px;
+    }
+    &__social {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

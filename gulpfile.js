@@ -82,7 +82,7 @@ gulp.task('watch', ['browser-sync', 'sass', 'scripts'], function () {
 gulp.task('build', ['sass', 'scripts'], function () {
 
     gulp.src([
-            'src/css/main.min.css'
+            'src/css/*.css'
         ])
         .pipe(gulp.dest('docs/css'));
 

@@ -8,6 +8,11 @@ img {
   height: auto;
 }
 
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff;}
+
 // Обнуление отступов по умолчанию у списков
 ul, li {
   margin: 0;
