@@ -179,7 +179,7 @@ header {
 .portfolio {
     position: relative;
     padding-top: 50px;
-    height: 895px;
+    padding-bottom:10%;
     &::after {
         position: absolute;
         content: "";
@@ -215,6 +215,54 @@ header {
         flex-direction: column;
         justify-content: center;
     }
+}
+
+// настройка кнопок галереи
+.mfp-arrow-left:after {
+    border-right: 0;
+}
+
+.mfp-arrow-right:after {
+    border-left: 0;
+}
+
+.mfp-arrow:before {
+    border-top-width: 0;
+    border-right-width: 0;
+    opacity: 1;
+}
+
+.mfp-arrow-right:before {
+    border-left: 0;
+}
+
+.mfp-arrow-left:before {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    left:30%;
+    transform: rotate(45deg);
+}
+
+.mfp-arrow-right:before {
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+    margin-left: 0;
+    transform: rotate(-45deg);
+}
+
+div.mfp-close {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    font-family: $f-primary;
+    font-weight: 100;
+    font-size: 50px;
 }
 
 .feedback {
@@ -296,5 +344,4 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-
 }
