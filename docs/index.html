@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/main.min.css">
-
 </head>
 
 <body>
@@ -29,11 +28,21 @@
             <li class="nav-list__item"><a href="#" class="nav-list__item-link">PORTFOLIO</a></li>
             <li class="nav-list__item"><a href="#" class="nav-list__item-link">CONTACT</a></li>
           </ul>
+          <ul class="nav-mobile-list" onclick="return showMenu;">
+            <li class="nav-mobile-list__item"><a href="#" class="nav-mobile-list__item-link">ABOUT</a></li>
+            <li class="nav-mobile-list__item"><a href="#" class="nav-mobile-list__item-link">PORTFOLIO</a></li>
+            <li class="nav-mobile-list__item"><a href="#" class="nav-mobile-list__item-link">CONTACT</a></li>
+          </ul>
         </nav>
         <div class="language">
           <span class="language__primary">EN</span>
           <span class="language__secondary">RU</span>
         </div>
+        <button class="mobile-menu-button">
+            <div class="mobile-menu-button__first-line"></div>
+            <div class="mobile-menu-button__second-line"></div>
+            <div class="mobile-menu-button__third-line"></div>
+        </button>
       </div>
       <div class="header-slogan">
         <p class="header-slogan__text">Your photographer <br> Mark Solaris</p>
@@ -78,15 +87,29 @@
         <h2 class="portfolio__header">Portfolio</h2>
         <div class="portfolio-images">
           <div class="portfolio-images__column-left">
-            <a href="img/gallery/1.png"><img src="img/gallery/1.png" alt=""></a>
-            <a href="img/gallery/2.png"><img src="img/gallery/2.png" alt=""></a>
+            <a href="img/gallery/1.png">
+              <div>
+                <img src="img/gallery/1.png" alt="">
+              </div>
+            </a>
+            <a href="img/gallery/2.png">
+              <div>
+                <img src="img/gallery/2.png" alt="">
+              </div>
+            </a>
           </div>
           <div class="portfolio-images__column-center">
-            <a href="img/author-photo.jpg"><img src="img/author-photo.jpg" alt=""></a>
+            <div>
+              <a href="img/author-photo.jpg"><img src="img/author-photo.jpg" alt=""></a>
+            </div>
           </div>
           <div class="portfolio-images__column-right">
-            <a href="img/gallery/1.png"><img src="img/gallery/1.png" alt=""></a>
-            <a href="img/gallery/2.png"><img src="img/gallery/2.png" alt=""></a>
+            <div>
+              <a href="img/gallery/1.png"><img src="img/gallery/1.png" alt=""></a>
+            </div>
+            <div>
+              <a href="img/gallery/2.png"><img src="img/gallery/2.png" alt=""></a>
+            </div>
           </div>
         </div>
         <a href="#" class="hire-me hire-me--portfolio"> Hire me</a>
@@ -147,6 +170,13 @@
           }
         }
       });
+    });
+
+    var mobMenuButton = $('.mobile-menu-button'),
+        mobMenuBlock = $('.mobile-menu-list');
+        
+    $('.mobile-menu-button').on('click', function (event) {
+      mobMenuBlock.toggleClass('mobile-menu-list--show');
     });
   </script>
 
